@@ -29,7 +29,7 @@ public class ProgressBar3 {
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         //建立 ProgressMonitor
-        ProgressMonitor progressBar=null;
+        ProgressMonitor progressBar=new ProgressMonitor(frame, "123", "downloading......", 0, 100);
         /////////////////////////
         Thread t=new Thread(){
             public void run(){
